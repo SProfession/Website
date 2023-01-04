@@ -1,25 +1,14 @@
 import React from 'react'
-import {createBrowserRouter, RouterProvider,} from "react-router-dom";
+import {RouterProvider} from "react-router-dom";
+import router from "./router/router"
 
-import Home from './pages/Home'
-import User from './pages/User'
+export default class App extends React.Component {
+  render() {
+    return (
+      <>
+        <RouterProvider router={router}/>
+      </>
+    )
+  }
 
-
-
-
-const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Home/>,
-    },
-    {
-        path: "/User",
-        element: <User/>,
-      },
-  ]);
-
-export default function App() {
-  return (
-    <RouterProvider router={router} />
-  )
 }
