@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using Website.Infrastructure.Graph;
 
 namespace Website.Infrastructure
 {
@@ -10,6 +9,5 @@ namespace Website.Infrastructure
         {
             optionsBuilder.UseInMemoryDatabase(databaseName: "GraphDB");
         }
-        public DbSet<GraphDataPoint> GraphDataPoints { get; set; }
     }
 }
