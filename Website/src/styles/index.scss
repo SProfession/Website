@@ -1,0 +1,14 @@
+body{
+    height: 100vh;
+    margin: 0;
+}
+
+div, aside{
+    display: block;
+    height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
